@@ -12,7 +12,7 @@
           
             
             <div class="col-12">
-                <h1>laravel comics</h1>
+                <h1 class="text-white text-center">laravel comics</h1>
             </div>
         </div>
     </div>
