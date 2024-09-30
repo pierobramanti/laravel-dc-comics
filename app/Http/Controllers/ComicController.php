@@ -13,11 +13,13 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $comic = Comic::all();
+{
+   
+    $comics = Comic::all();
 
-        return view('comics.index', compact('comics'));
-    }
+    return view('comics.index', compact('comics'));
+}
+
 
     /**
      * Show the form for creating a new resource.

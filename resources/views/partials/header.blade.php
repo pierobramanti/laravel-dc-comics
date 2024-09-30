@@ -21,15 +21,15 @@
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-between align-items-center">
-                    <a href="">
+                    <a href="{{route('homepage')}}">
                         <img class="img-fluid" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="DC Comics">
                     </a>
                     <ul class="list-unstyled d-none d-lg-flex m-0">
                         <li class="fw-bold px-2">
                             <a class="text-decoration-none text-uppercase text-dark" href="">Characters</a>
                         </li>
-                        <li class="fw-bold px-2">
-                            <a class="text-decoration-none text-uppercase text-dark" href="">Comics</a>
+                        <li class="fw-bold px-2 {{Route::currentRouteName()==='comics.index'?'active':'' }}">
+                            <a class="text-decoration-none text-uppercase text-dark" href="{{route('comics.index')}}">Comics</a>
                         </li>
                         <li class="fw-bold px-2">
                             <a class="text-decoration-none text-uppercase text-dark" href="">Movies</a>
