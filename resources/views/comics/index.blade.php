@@ -12,12 +12,14 @@
                         {{-- Ciclo per i fumetti --}}
                         @foreach($comics as $comic)
                             <div class="col-md-2 mb-4"> 
-                                <div class="comic text-center">
-                                    <div class="image-container"> {{-- Usa la classe .image-container --}}
-                                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="img-fluid">
+                                <a href="{{route('comic.show',['comic'=>$comic->id])}}">
+                                    <div class="comic text-center">
+                                        <div class="image-container"> 
+                                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" class="img-fluid">
+                                        </div>
+                                        <h4 class="fs-5 text-white mt-2">{{ $comic['title'] }}</h4>
                                     </div>
-                                    <h4 class="fs-5 text-white mt-2">{{ $comic['title'] }}</h4>
-                                </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>
