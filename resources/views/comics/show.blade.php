@@ -11,9 +11,10 @@
                 <h1 class="display-5 text-white">{{ $comic['title'] }}</h1>
                 <p class="text-muted"><sub class="text-white">{{ $comic['type'] }}</sub></p>
                 <p class="text-white">{{ $comic['description'] }}</p> 
-
                 <h4 class="fw-bold text-primary">Price: {{ $comic['price'] }}$</h4> 
-                <p class="text-muted">Sale Date: {{ $comic['sale_date'] }}</p>
+                <p class="text-muted text-white">Sale Date: {{ $comic['sale_date'] ?? 'Not available' }}</p>
+                <p class="fw-bold text-white"><strong>Artists: </strong>{{$comic['artists']}}.</p>
+                <p class="fw-bold text-white"><strong>Writers: </strong>{{$comic['writers']}}.</p>
             </div>
         </div>
     </div>
