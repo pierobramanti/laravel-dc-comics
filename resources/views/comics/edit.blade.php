@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card p-4 shadow-sm bg-light border-0 rounded">
                 <h2 class="text-center mb-4">Aggiungi un nuovo Fumetto</h2>
-                <form action="{{ route('comics.update', ['comic'->$comic->id]) }}" method="post">
+                <form action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="post">
                     @csrf
                     @method('PUT')
                     <div class="mb-3">
