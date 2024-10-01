@@ -55,6 +55,8 @@ class ComicController extends Controller
         $new_comic->writers=$form_data['writers'];
 
         $new_comic->save();
+
+        return redirect()->route('comics.index');
     }
 
     /**
