@@ -29,10 +29,6 @@
                         @endforeach
                     </div>
                 </div>
-
-                <div class="col-12">
-                    <h1 class="text-white text-center">Laravel Comics</h1>
-                </div>
             </div>
         </div>
     </div>

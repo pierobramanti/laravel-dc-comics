@@ -14,7 +14,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="thumb" class="form-label">Immagine</label>
-                        <input type="text" name="thumb" id="thumb" class="form-control" placeholder="Inserisci URL dell'immagine">
+                        <input type="text" name="thumb" id="thumb" class="form-control" placeholder="Inserisci URL dell'immagine" value="{{ $comic->thumb ?? '' }}">
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrizione</label>

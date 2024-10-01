@@ -19,12 +19,12 @@
                 <form action="{{ route('comics.destroy', $comic['id']) }}" method="POST" class="d-inline">
                 @csrf
                 @method('DELETE')
-                <button type="submit" class="btn btn-danger mt-3" onclick="return confirm('Sei sicuro di voler cancellare questo fumetto?')">Delete</button>
+                <button type="submit" class="btn btn-danger mt-3 delete-button" onclick="return confirm('Sei sicuro di voler cancellare questo fumetto?')">Delete</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
-
+@include('comics.partials.modal_delete')
 @endsection
