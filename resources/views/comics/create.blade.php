@@ -33,8 +33,8 @@
                         <input type="text" name="type" id="type" class="form-control" placeholder="Inserisci la tipologia">
                     </div>
                     <div class="mb-3">
-                        <label for="artist" class="form-label">Artisti</label>
-                        <textarea name="artist" id="artist" class="form-control" placeholder="Inserisci gli artisti"></textarea>
+                        <label for="artists" class="form-label">Artisti</label>
+                        <textarea name="artists" id="artists" class="form-control" placeholder="Inserisci gli artisti"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="writers" class="form-label">Scrittori</label>
