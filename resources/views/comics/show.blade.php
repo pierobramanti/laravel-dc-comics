@@ -16,6 +16,11 @@
                 <p class="fw-bold text-white"><strong>Artists: </strong>{{ $comic['artists'] }}.</p>
                 <p class="fw-bold text-white"><strong>Writers: </strong>{{ $comic['writers'] }}.</p>
                 <a href="{{ route('comics.edit', $comic['id']) }}" class="btn btn-warning mt-3">Edit</a>
+                <form action="{{ route('comics.destroy', $comic['id']) }}" method="POST" class="d-inline">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger mt-3">Delete</button>
+                </form>
             </div>
         </div>
     </div>
