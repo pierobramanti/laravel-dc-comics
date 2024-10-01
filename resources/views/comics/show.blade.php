@@ -13,8 +13,9 @@
                 <p class="text-white">{{ $comic['description'] }}</p> 
                 <h4 class="fw-bold text-primary">Price: {{ $comic['price'] }}$</h4> 
                 <p class="text-muted text-white">Sale Date: {{ $comic['sale_date'] ?? 'Not available' }}</p>
-                <p class="fw-bold text-white"><strong>Artists: </strong>{{$comic['artists']}}.</p>
-                <p class="fw-bold text-white"><strong>Writers: </strong>{{$comic['writers']}}.</p>
+                <p class="fw-bold text-white"><strong>Artists: </strong>{{ $comic['artists'] }}.</p>
+                <p class="fw-bold text-white"><strong>Writers: </strong>{{ $comic['writers'] }}.</p>
+                <a href="{{ route('comics.edit', $comic['id']) }}" class="btn btn-warning mt-3">Edit</a>
             </div>
         </div>
     </div>

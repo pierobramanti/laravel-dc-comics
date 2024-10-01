@@ -6,8 +6,9 @@
         <div class="col-md-8">
             <div class="card p-4 shadow-sm bg-light border-0 rounded">
                 <h2 class="text-center mb-4">Aggiungi un nuovo Fumetto</h2>
-                <form action="{{ route('comics.store') }}" method="post">
+                <form action="{{ route('comics.update', ['comic'->$comic->id]) }}" method="post">
                     @csrf
+                    @method('PUT')
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo</label>
                         <input type="text" name="title" id="title" class="form-control" placeholder="Inserisci il titolo" value="{{ $comic->title }}">
@@ -18,7 +19,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="description" class="form-label">Descrizione</label>
-                        <textarea name="description" id="description" class="form-control" placeholder="Inserisci la descrizione"></textarea>
+                        <textarea name="description" id="description" class="form-control" placeholder="Inserisci la descrizione">{{ $comic->description }}</textarea>
                     </div>
                     <div class="mb-3">
                         <label for="price" class="form-label">Prezzo</label>
