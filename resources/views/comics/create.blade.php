@@ -17,10 +17,6 @@
                         <input type="text" name="thumb" id="thumb" class="form-control" placeholder="Inserisci URL dell'immagine">
                     </div>
                     <div class="mb-3">
-                        <label for="series" class="form-label">Serie</label>
-                        <input type="text" name="series" id="series" class="form-control" placeholder="Inserisci il nome della serie">
-                    </div>
-                    <div class="mb-3">
                         <label for="price" class="form-label">Prezzo</label>
                         <input type="text" name="price" id="price" class="form-control" placeholder="Inserisci il prezzo">
                     </div>
