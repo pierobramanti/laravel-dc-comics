@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="bg-dark py-2">
 <div class="container">
     <div class="row justify-content-center">
     @if ($errors->any())
@@ -57,5 +58,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
